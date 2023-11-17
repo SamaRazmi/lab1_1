@@ -1,0 +1,101 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, p, nav, a, img, form, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a basic font family */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    display: inline-block;
+}
+
+/* Style the center container */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    float: right;
+}
+
+/* Style the images container */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.sections{
+    border:#333 solid;
+    border-radius: 5px;
+    align-content: center;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.sections h2{
+    text-align: center;
+}
+.image-container img {
+    width: 30%; /* Adjust as needed */
+}
+
+/* Style the options section */
+.options-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px; 
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.option {
+    text-align: center;
+}
+
+.option img {
+    width: 87%; /* Adjust as needed */
+    height: 87%;
+}
+
+/* Style the table section */
+.table-section {
+    margin-top: 50px;
+}
+
+#myTable {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+}
+
+#myTable th, #myTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#myTable th {
+    background-color: #333;
+    color: white;
+}
+@media (max-width: 600px) {
+    .options-section {
+        grid-template-columns: 1fr;
+    }
+}
